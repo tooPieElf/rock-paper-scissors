@@ -1,0 +1,44 @@
+<script >
+
+function computerPlay(){
+var items = [ "rock", "paper", "scissors"];
+var randomItem = items[Math.floor(Math.random()*items.length)];
+return randomItem;
+}
+
+    
+
+    
+   function play(playerSelection, computerSelection) 
+   {
+       if (playerSelection == "rock")
+       {
+            if (computerSelection = "rock"){
+                return "Same, play again!";
+            }else if (computerSelection == "paper"){
+                return "Paper covers rock, you lose!";
+        }else{
+                return "Rock crushes scissor, you win";
+       }}
+       else if (playerSelection == "paper")
+       {
+           if (computerSelection == "paper"){
+               return "Same, play again!";
+           }else if (computerSelection == "scissor"){
+               return "Scissor cuts paper, you lose!";
+           }else{
+               return "Paper covers rock, you win";
+       }}
+       else
+       {
+           if (computerSelection == "scissor"){
+               return "Same, play again!";
+           }else if (computerSelection == "rock"){
+               return "Rock crushes scissor, you lose!";
+           }else{
+               return "Scissor cuts paper, you win";
+       }}
+   }   
+
+
+</script>
